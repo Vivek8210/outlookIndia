@@ -14,25 +14,26 @@ import Poshan from '../AllContent/Poshan'
 import Sports from '../AllContent/Sports'
 import Travel from "../AllContent/Travel"
 import Video from "../AllContent/Video"
+import FullNews from '../singlepage/FullNews'
 import {Routes,Route} from 'react-router-dom'
 const AllRoutes = () => {
   return (
  <Routes>
   <Route path="/" element={<Home/>}/>
   <Route path="/business" element={<Business/>}/>
-  <Route path="/crypto_corner" element={<Crypto_Corner/>}/>
+  <Route path="/crypto" element={<Crypto_Corner/>}/>
   <Route path="/entertainment" element={<Entertainment/>}/>
   <Route path="/hindi" element={<Hindi/>}/>
   <Route path="/magzine" element={<Magzine/>}/>
   <Route path="/money" element={<Money/>}/>
   <Route path="/others" element={<Others/>}/>
   <Route path="/outlook" element={<Outlook/>}/>
-  <Route path="/photo" element={<Photo/>}/>
+  <Route path="/photos" element={<Photo/>}/>
   <Route path="/poshan" element={<Poshan/>}/>
   <Route path="/sports" element={<Sports/>}/>
   <Route path="/travel" element={<Travel/>}/>
-  <Route path="/video" element={<Video/>}/>
-  
+  <Route path="/videos" element={<Video/>}/>
+  <Route path="/fullnews" element={<FullNews/>}/>
 
  </Routes>
   )

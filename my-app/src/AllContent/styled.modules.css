@@ -1,0 +1,65 @@
+.mainlook{
+    display: flex;
+    width: 100%;
+    height: auto;
+   
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+.firstlook{
+    width: 75%;
+    height: auto;
+    border: 1px solid red;
+}
+.secondlook{
+    width: 24%;
+    height: auto;
+    border: 1px solid black;
+
+}
+p{
+    font-size: 16px;
+}
+.navlink:hover {
+        color: red;
+}
+.mainbusiness{
+display: flex;
+justify-content: space-between;
+width: 100%;
+}
+.firstbusiness{
+    width: 50%;
+}
+.secbusiness{
+    width:20%
+}
+.thirdbusiness{
+    width: 20%;
+}
+.advertisment{
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+}
+.advertismentimg{
+    
+    margin-left: 20%;
+}
+.active:hover{
+    color: red;
+}
+@media only screen and (min-width:543px) and (max-width:1056px){
+    .mainlook{
+        display: flex;
+        width: 100%;
+        height: auto;
+       
+        margin: auto;
+        justify-content: space-between;
+        margin-top: 8px;
+    }
+}

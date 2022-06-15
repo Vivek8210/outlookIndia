@@ -2,10 +2,11 @@
 
 
 import React from 'react'
+import Outlook from './Outlook'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div><Outlook/></div>
   )
 }
 

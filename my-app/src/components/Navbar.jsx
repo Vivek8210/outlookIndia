@@ -2,6 +2,7 @@
 
 
 import React from 'react'
+import "../AllContent/styled.modules.css";
 // import { ReactNode } from 'react';
 import {
   Box,
@@ -60,6 +61,7 @@ const Navbar = () => {
                   
            
             <HStack
+            className='nav'
               as={'nav'}
               margin={"auto"}
               spacing={1}
@@ -75,26 +77,27 @@ const Navbar = () => {
                  justifyContent={'space-between'} 
                  gap={"10px"}
                  marginLeft={"50px"}
-                 
+                
+                //  _focus={{ boxShadow: "outline" }}
                   >
               {/* {Links.map((link) => (
                 <NavLink key={link}>{link}</NavLink>
                 
               ))} */}
-              <NavLink to="/">HOME</NavLink>
-              <NavLink to="/outlook">OUTLOOK</NavLink>
-              <NavLink to="/BUSINESS">BUSINESS</NavLink>
-              <NavLink to="/MONEY">MONEY</NavLink>
-              <NavLink to="/CRYPTO CORNER">CRYPTO CORNER</NavLink>
-              <NavLink to="/TRAVEL">TRAVEL</NavLink>
-              <NavLink to="/SPORTS">SPORTS</NavLink>
-              <NavLink to="/VIDEOS">VIDEOS</NavLink>
-              <NavLink to="/ENTERTAINMENT">ENTERTAINMENT</NavLink>
-              <NavLink to="/PHOTOS">PHOTOS</NavLink>
-              <NavLink to="/MAGZINE">MAGZINE</NavLink>
-              <NavLink to="/HINDI">HINDI</NavLink>
-              <NavLink to="/POSHAN">POSHAN</NavLink>
-              <NavLink to="/OTHERS">OTHERS</NavLink>
+              <NavLink className={"active"} to="/">HOME</NavLink>
+              <NavLink className={"active"}  to="/outlook">OUTLOOK</NavLink>
+              <NavLink className={"active"}  to="/BUSINESS">BUSINESS</NavLink>
+              <NavLink className={"active"}  to="/MONEY">MONEY</NavLink>
+              <NavLink className={"active"}  to="/crypto ">CRYPTO CORNER</NavLink>
+              <NavLink className={"active"}  to="/TRAVEL">TRAVEL</NavLink>
+              <NavLink className={"active"}  to="/SPORTS">SPORTS</NavLink>
+              <NavLink className={"active"}  to="/VIDEOS">VIDEOS</NavLink>
+              <NavLink className={"active"}  to="/ENTERTAINMENT">ENTERTAINMENT</NavLink>
+              <NavLink className={"active"}  to="/PHOTOS">PHOTOS</NavLink>
+              <NavLink className={"active"}  to="/MAGZINE">MAGZINE</NavLink>
+              <NavLink className={"active"}  to="/HINDI">HINDI</NavLink>
+              <NavLink className={"active"}  to="/POSHAN">POSHAN</NavLink>
+              <NavLink className={"active"}  to="/OTHERS">OTHERS</NavLink>
              <img src='https://www.outlookindia.com/images/home_new_v4/search_in_nav.svg' style={{height:"15px"}}/>
 
              
@@ -102,7 +105,7 @@ const Navbar = () => {
           </HStack>
          
           <Flex alignItems={'center'}>
-            {/* <Menu>
+            <Menu>
              
               <MenuList>
                 <MenuItem>Link 1</MenuItem>
@@ -110,7 +113,7 @@ const Navbar = () => {
                 <MenuDivider />
                 <MenuItem>Link 3</MenuItem>
               </MenuList>
-            </Menu> */}
+            </Menu>
           </Flex>
         </Flex>
 
@@ -118,25 +121,26 @@ const Navbar = () => {
           <Box pb={4} display={{ md: 'none' }} >
             <Stack as={'nav'} spacing={4} fontSize={"14px"}
               color={"#4f4d4d"}
-              alignItems={'center'}
+              
+             textAlign={"start"}
               fontWeight={"medium"}>
               {/* {Links.map((link) => (
                 <NavLink key={link}>{link}</NavLink>
               ))} */}
-                 <NavLink to="/">HOME</NavLink>
-              <NavLink to={"/outlook"}>OUTLOOK</NavLink>
-              <NavLink to="/BUSINESS">BUSINESS</NavLink>
-              <NavLink to="/MONEY">MONEY</NavLink>
-              <NavLink to="/CRYPTO CORNER">CRYPTO CORNER</NavLink>
-              <NavLink to="/TRAVEL">TRAVEL</NavLink>
-              <NavLink to="/SPORTS">SPORTS</NavLink>
-              <NavLink to="/VIDEOS">VIDEOS</NavLink>
-              <NavLink to="/ENTERTAINMENT">ENTERTAINMENT</NavLink>
-              <NavLink to="/PHOTOS">PHOTOS</NavLink>
-              <NavLink to="/MAGZINE">MAGZINE</NavLink>
-              <NavLink to="/HINDI">HINDI</NavLink>
-              <NavLink to="/POSHAN">POSHAN</NavLink>
-              <NavLink to="/OTHERS">OTHERS</NavLink>
+                 <NavLink to="/">HOME</NavLink><hr/>
+              <NavLink className={"active"}  to={"/outlook"}>OUTLOOK  </NavLink><hr/>
+              <NavLink className={"active"}  to="/BUSINESS">BUSINESS</NavLink><hr/>
+              <NavLink className={"active"}  to="/MONEY">MONEY</NavLink><hr/>
+              <NavLink className={"active"}  to="/crypto corner">CRYPTO CORNER</NavLink><hr/>
+              <NavLink className={"active"}  to="/TRAVEL">TRAVEL</NavLink><hr/>
+              <NavLink className={"active"}  to="/SPORTS">SPORTS</NavLink><hr/>
+              <NavLink className={"active"}  to="/VIDEOS">VIDEOS</NavLink><hr/>
+              <NavLink className={"active"}  to="/ENTERTAINMENT">ENTERTAINMENT</NavLink><hr/>
+              <NavLink className={"active"}  to="/PHOTOS">PHOTOS</NavLink><hr/>
+              <NavLink className={"active"}  to="/MAGZINE">MAGZINE</NavLink><hr/>
+              <NavLink className={"active"}  to="/HINDI">HINDI</NavLink><hr/>
+              <NavLink className={"active"}  to="/POSHAN">POSHAN</NavLink><hr/>
+              <NavLink className={"active"}  to="/OTHERS">OTHERS</NavLink><hr/>
             </Stack>
           </Box>
         ) : null}

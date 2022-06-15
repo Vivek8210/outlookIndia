@@ -13,6 +13,7 @@ import {
     useColorModeValue,
   } from '@chakra-ui/react';
  import {  NavLink } from "react-router-dom";
+ import { FaBeer } from 'react-icons/fa';
 
 const Footer = () => {
     const ListHeader = ({ children }: { children: ReactNode }) => {
@@ -80,7 +81,7 @@ const Footer = () => {
       
         <Stack align={'flex-start'}>
           <ListHeader>Follow Us</ListHeader>
-          <NavLink to={'/'}>Facebook</NavLink>
+          <NavLink to={'/'}>Facebook </NavLink>
           <NavLink to={'/'}>Twitter</NavLink>
           <NavLink to={'/'}>Dribbble</NavLink>
           <NavLink to={'/'}>Instagram</NavLink>
