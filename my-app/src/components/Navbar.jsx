@@ -49,7 +49,7 @@ const Navbar = () => {
   return (
     <>
       <Box  px={4} >
-        <Flex h={12} alignItems={'center'} justifyContent={'space-between'} >
+        <Flex h={16} alignItems={'center'} justifyContent={'space-between'} >
           <IconButton
             size={'md'}
             icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
@@ -64,7 +64,7 @@ const Navbar = () => {
             className='nav'
               as={'nav'}
               margin={"auto"}
-              spacing={1}
+              spacing={2}
               fontSize={"14px"}
               color={"#4f4d4d"}
               alignItems={'center'}
@@ -146,7 +146,7 @@ const Navbar = () => {
         ) : null}
       </Box>
       <Divider orientation='horizontal' bg={useColorModeValue('red', 'gray.900')}/>
-      <Box p={4}>Main Content Here</Box>
+     
     </>
   );
 }

@@ -31,13 +31,13 @@ const Others = () => {
     <div className='firstlook'>
       <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_5/IMAGE_1655265518.webp" alt="" />
    <p>Pall of gloom in J&K amid continued targeted attacks on minorities and slew of militant killings     -Getty Images</p><br />
-   <NavLink className={"navlink"} style={{fontSize:"35px", fontWeight:"light"}} to="/fullnews">Targeted Attacks On Minority, Migrant Workers In J&K Pose Biggest Challenge To Govt</NavLink>
+   <NavLink className={"navlink"} style={{fontSize:"35px", fontWeight:"light"}} to="/">Targeted Attacks On Minority, Migrant Workers In J&K Pose Biggest Challenge To Govt</NavLink>
     </div>
     <div className='secondlook'>
       <img src="https://imgnew.outlookindia.com/uploadimage/library/free_files/jpg/300-120_2022_06_13_080305.jpg" alt="" />
       <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_5/IMAGE_1655268214.webp" alt="" />
       <br />
-      <NavLink className={"navlink"} style={{fontSize:"26px", fontWeight:"light"}} to="/fullnews">From Naya Dawn To Daily Violence, Kashmir Post-August 5, 2019</NavLink><br />
+      <NavLink className={"navlink"} style={{fontSize:"26px", fontWeight:"light"}} to="/">From Naya Dawn To Daily Violence, Kashmir Post-August 5, 2019</NavLink><br />
       <p>Three years after the abrogation of Article 370, there is no elected government in Jammu and Kashmir and targeted killings have gained pace despite frequent encounters.</p>
     <br />
     <h6>NASEER GANAI/ last updated at 8:58 am</h6><br />
@@ -47,7 +47,7 @@ const Others = () => {
   <br />
   <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_5/IMAGE_1650862677.webp" alt="" />
     <br />
-    <NavLink className={"navlink"} style={{fontSize:"26px", fontWeight:"light"}} to="/fullnews">An Ode to Ladakh: A Pristine And Beautiful Region In Transition</NavLink><br />
+    <NavLink className={"navlink"} style={{fontSize:"26px", fontWeight:"light"}} to="/">An Ode to Ladakh: A Pristine And Beautiful Region In Transition</NavLink><br />
     <p>The hope is that Ladakh remains a region that while reaping the benefits of economic development and modernisation retains its essential character.</p>
     </div>
    
@@ -108,7 +108,7 @@ function BlogPostWithImage({image,title,description,publishedAt,source}) {
             color={useColorModeValue('gray.700', 'white')}
             fontSize={'2xl'}
             fontFamily={'body'}>
-            {title}
+             <NavLink className={"active"} to={`/fullnews/${title}/${source}/${description}`}>{title}</NavLink>
           </Heading>
           <Text color={'gray.500'}>
            {description}

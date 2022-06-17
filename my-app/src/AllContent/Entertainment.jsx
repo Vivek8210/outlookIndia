@@ -110,7 +110,7 @@ function BlogPostWithImage({image,title,description,publishedAt,source}) {
             color={useColorModeValue('gray.700', 'white')}
             fontSize={'2xl'}
             fontFamily={'body'}>
-            {title}
+           <NavLink className={"active"} to={`/fullnews/${title}/${source}/${description}`}>{title}</NavLink>
           </Heading>
           <Text color={'gray.500'}>
            {description}

@@ -68,7 +68,7 @@
     },
     {
       "source": {  "name": "Stackoverflow.com" },
-      "id":6,
+      "id":7,
       "author": "Stack Overflow",
       "title": "TypeError: 'ModelBase' object is not iterable when trying to use Exclude",
       "description": "I have the following two models:\nclass Listings(models.Model):\n CATEGORY = [\n (\"Miscellaneous\", \"Miscellaneous\"),\n (\"Movies and Television\", \"Movies and Television\"),\n (\"Sports\", \"Sports\"),\n (\"Arts and Crafts\", \"Arts and Crafts\"),\n (\"Clothing\", \"Clothing\"),\n …",
@@ -79,7 +79,7 @@
     },
     {
       "source": {  "name": "Gixtools.net" },
-      "id":6,
+      "id":8,
       "author": "GIXnews",
       "title": "“Downthem” DDoS-for-Hire Boss Gets 2 Years in Prison",
       "description": "A 33-year-old Illinois man was sentenced to two years in prison today following his conviction last year for operating services that allowed paying customers to launch powerful distributed denial-of-service (DDoS) attacks against hundreds of thousands of Inte…",
@@ -90,7 +90,7 @@
     },
     {
       "source": {  "name": "Mindsdb.com" },
-      "id":6,
+      "id":9,
       "author": "Costa Tin",
       "title": "Why Your Database Needs a Machine Learning Brain",
       "description": "The past 10-15 years have seen organizations put vast resources into creating databases that let them understand their business better, spot trends earlier, and manage tasks more effectively.\nIndeed, a whole industry has now grown up around it, not just with …",
@@ -101,7 +101,7 @@
     },
     {
       "source": {  "name": "Babajiji.com" },
-      "id":6,
+      "id":10,
       "author": "Yuri Nomura",
       "title": "Airbnb even offers and you may renters have been Totally linking additionally the company is mostly okay having-they",
       "description": "Airbnb even offers and you may renters have been Totally linking additionally the company is mostly okay havin […]",
@@ -112,7 +112,7 @@
     },
     {
       "source": {  "name": "Babajiji.com" },
-      "id":6,
+      "id":11,
       "author": "Yuri Nomura",
       "title": "There’s a lot of top quality matchmaking software, but the most readily useful dating website for single mothers is actually eharmony",
       "description": "There’s a lot of top quality matchmaking software, but the most readily useful dating website for single […]",
@@ -123,7 +123,7 @@
     },
     {
       "source": {  "name": "The Boston Globe" },
-      "id":6,
+      "id":12,
       "author": "Felice J. Freyer",
       "title": "Advocates for safe consumption sites in Mass. find hope in shifting political winds as overdose deaths soar",
       "description": "“There’s been a lot of change regionally, locally, that I think is building momentum for it,” said state Representative Dylan A. Fernandes, sponsor of a bill that would establish a 10-year pilot program involving centers where people can use drugs under medic…",
@@ -134,7 +134,7 @@
     },
     {
       "source": {  "name": "Krebs on Security" },
-      "id":6,
+      "id":13,
       "author": "todsacerdoti",
       "title": "“Downthem” DDoS-for-Hire Boss Gets 2 Years in Prison",
       "description": "A 33-year-old Illinois man was sentenced to two years in prison today following his conviction last year for operating services that allowed paying customers to launch powerful distributed denial-of-service (DDoS) attacks against hundreds of thousands of Inte…",
@@ -145,7 +145,7 @@
     },
     {
       "source": {  "name": "Raywenderlich.com" },
-      "id":6,
+      "id":14,
       "author": null,
       "title": "In-App Purchases [SUBSCRIBER]",
       "description": "<p>Updated for 2022! In-App Purchase offers additional revenue streams for developers other than the initial purchase from the App Store.\nThis can be great for unlocking functionality, providing additional content or for in-game currency.</p>\n<p>This course c…",
@@ -156,7 +156,7 @@
     },
     {
       "source": {  "name": "TheJournal.ie" },
-      "id":6,
+      "id":15,
       "author": "Lauren Boland",
       "title": "Carer told to repay social welfare payment after teen son's death calls for system reform",
       "description": "The proposal would prevent family carers from being immediately cut off from supports if a disabled child dies at age 16 or older.",
@@ -167,7 +167,7 @@
     },
     {
       "source": {  "name": "Kernel.org" },
-      "id":6,
+      "id":16,
       "author": "Junio C Hamano",
       "title": "Merge branch 'sn/fsmonitor-missing-clock'",
       "description": null,
@@ -178,7 +178,7 @@
     },
     {
       "source": {  "name": "EFF" },
-      "id":6,
+      "id":17,
       "author": "Bennett Cyphers",
       "title": "How the federal government buys our cell phone location data",
       "description": "Over the past few years, data brokers and federal military, intelligence, and law enforcement agencies have formed a vast, secretive partnership to surveil the movements of millions of people. Many of the mobile apps on our cell phones track our movements wit…",
@@ -189,7 +189,7 @@
     },
     {
       "source": {  "name": "Wordpress.org" },
-      "id":6,
+      "id":18,
       "author": "Jb Audras",
       "title": "A Week in Core – June 13, 2022",
       "description": "Welcome back to a new issue of Week in Core. Let’s take a look at what changed on Trac between June 6 and June 13, 2022. 27 commits 48 contributors 45 tickets created 10 tickets reopened 36 tickets closed The Core team is currently working on the next major r…",
@@ -200,7 +200,7 @@
     },
     {
       "source": {  "name": "Reason" },
-      "id":6,
+      "id":19,
       "author": "Eugene Volokh",
       "title": "Texas Ban on \"Transmitting\" Nude Photos Without Request or Consent: Does It Apply Just to Posting Them Online?",
       "description": "It looks like it was intended to cover unwanted sexual images sent to a particular person, but its text seems broad enough to potentially cover even posting things on your own site.",
@@ -211,7 +211,7 @@
     },
     {
       "source": {  "name": "Nationalcybersecurity.com" },
-      "id":6,
+      "id":20,
       "author": "NCS News-Feed",
       "title": "The many lives of BlackCat ransomware | #emailsecurity | #phishing | #ransomware | #cybersecurity | #infosecurity | #hacker",
       "description": "The BlackCat ransomware, also known as ALPHV, is a prevalent threat and a prime example of the growing ransomware-as-a-service (RaaS) gig economy. It’s notewo",

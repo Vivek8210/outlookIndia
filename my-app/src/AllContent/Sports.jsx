@@ -32,22 +32,27 @@ const Sports = () => {
     <div className='mainbusiness'>
       <div className='firstbusiness'>
         <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_1/IMAGE_1655285970.webp" alt="" />  <br />
-        <NavLink className={"navlink"} style={{fontSize:"35px", fontWeight:"light"}} to="/fullnews">UEFA Nations League: Netherlands Survive Wales Fightback For Dramatic Win - In Pics</NavLink><br />
+        <NavLink className={"navlink"} style={{fontSize:"35px", fontWeight:"light"}} to="/
+        ">UEFA Nations League: Netherlands Survive Wales Fightback For Dramatic Win - In Pics</NavLink><br />
         
         <p>After leading 2-1, the Netherlands conceded a 92nd-minute penalty with Gareth Bale converting from the spot, then Memphis Depay won it straight from the restart. A 3-2 scoreline at home helped Oranje lead Group A4 after the fourth round with 10 points....</p>
         </div>
       <div className='secbusiness'>
         <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_2/IMAGE_1655283881.webp" alt="" /><br />
-        <NavLink className={"navlink"} style={{fontSize:"26px", fontWeight:"light"}} to="/fullnews">Arsene Wenger's Comment On Africa Draws The Ire Of South Americans</NavLink><br />
+        <NavLink className={"navlink"} style={{fontSize:"26px", fontWeight:"light"}} to="/
+        ">Arsene Wenger's Comment On Africa Draws The Ire Of South Americans</NavLink><br />
         <p>Arsene Wenger said that if French striker Kylian Mbappe 'had been born in Cameroon, he wouldn't have become the striker he is today.'</p><br /><hr />
-        <NavLink className={"navlink"} style={{fontSize:"26px", fontWeight:"light"}} to="/fullnews">SL Vs AUS, 1st ODI: Glenn Maxwell Guides Australia To Nervy Win Over Sri Lanka</NavLink>
+        <NavLink className={"navlink"} style={{fontSize:"26px", fontWeight:"light"}} to="/
+        ">SL Vs AUS, 1st ODI: Glenn Maxwell Guides Australia To Nervy Win Over Sri Lanka</NavLink>
         <p>Chasing a revised target of 282 runs from 44 overs, Australia were 189/5 in 30 overs when Glenn Maxwell walked in. He hit 80 not out off 51.</p>
       </div>
       <div className='thirdbusiness'>
         <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_1/IMAGE_1655281588.webp" alt="" /><br />
-        <NavLink className={"navlink"} style={{fontSize:"26px", fontWeight:"light"}} to="/fullnews">UEFA Nations League: Belgium Cement Second Spot With Win Over Poland - In Pics</NavLink><br />
+        <NavLink className={"navlink"} style={{fontSize:"26px", fontWeight:"light"}} to="/
+        ">UEFA Nations League: Belgium Cement Second Spot With Win Over Poland - In Pics</NavLink><br />
         <p>Michy Batshuayi's header in the first half proved the difference between Belgium and Poland in their UEFA Nations League, Group A4 match. Belgium are second in...</p><br /><hr />
-        <NavLink className={"navlink"} style={{fontSize:"26px", fontWeight:"light"}} to="/fullnews">Darwin Nunez, Uruguayan Striker, Joins Liverpool From Benfica For USD 78 Million</NavLink>
+        <NavLink className={"navlink"} style={{fontSize:"26px", fontWeight:"light"}} to="/
+        ">Darwin Nunez, Uruguayan Striker, Joins Liverpool From Benfica For USD 78 Million</NavLink>
         <p>It is an immediate response by Liverpool to the signing of Erling Haaland by Premier League title rivals Manchester City.</p>
       </div>
     </div>
@@ -112,7 +117,7 @@ function BlogPostWithImage({image,title,description,publishedAt,source}) {
             color={useColorModeValue('gray.700', 'white')}
             fontSize={'2xl'}
             fontFamily={'body'}>
-            {title}
+             <NavLink className={"active"} to={`/fullnews/${title}/${source}/${description}`}>{title}</NavLink>
           </Heading>
           <Text color={'gray.500'}>
            {description}

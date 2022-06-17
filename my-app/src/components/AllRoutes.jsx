@@ -15,7 +15,9 @@ import Sports from '../AllContent/Sports'
 import Travel from "../AllContent/Travel"
 import Video from "../AllContent/Video"
 import FullNews from '../singlepage/FullNews'
-import {Routes,Route} from 'react-router-dom'
+import Login from '../login/Login'
+import {Route, Routes} from 'react-router-dom'
+
 const AllRoutes = () => {
   return (
  <Routes>
@@ -33,7 +35,9 @@ const AllRoutes = () => {
   <Route path="/sports" element={<Sports/>}/>
   <Route path="/travel" element={<Travel/>}/>
   <Route path="/videos" element={<Video/>}/>
-  <Route path="/fullnews" element={<FullNews/>}/>
+  <Route  path="/fullnews/:title/:source/:description" element={<FullNews/>}/>
+  {/* <Route  path="/fullnews/:title" element={<FullNews/>}/> */}
+  <Route path='/login' element={<Login/>}/>
 
  </Routes>
   )

@@ -2,7 +2,7 @@ import React from 'react'
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchData } from '../redux/action'
-import { NavLink } from 'react-router-dom'
+import { NavLink,Link } from 'react-router-dom'
 import "./styled.modules.css";
 
 
@@ -17,7 +17,7 @@ import {
   Image,
   useColorModeValue,
 } from '@chakra-ui/react';
-const Outlook = () => {
+const Outlook = ({title}) => {
   const articles=useSelector((store)=>store.magzineData.articles)
   const dispatch=useDispatch()
   useEffect(()=>{
@@ -25,20 +25,21 @@ const Outlook = () => {
     dispatch(fetchData())
   }
   },[articles?.length,dispatch])
-  console.log(articles)
+  // console.log(articles)
   return (
     <>
     <div className='mainlook'>
       <div className='firstlook'>
         <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_5/IMAGE_1655182258.webp" alt="" />
      <p>Pall of gloom in J&K amid continued targeted attacks on minorities and slew of militant killings     -Getty Images</p><br />
-     <NavLink className={"navlink"} style={{fontSize:"35px", fontWeight:"light"}} to="/fullnews">Targeted Attacks On Minority, Migrant Workers In J&K Pose Biggest Challenge To Govt</NavLink>
+     <NavLink className={"navlink"} style={{fontSize:"35px", fontWeight:"light"}} to={`/`}>Targeted Attacks On Minority, Migrant Workers In J&K Pose Biggest Challenge To Govt</NavLink><br />
+     <p>With emerging challenges like climate change, India needs a strong political will to address issues of wildlife conservation. India is home to various critically endangered species that require consistent efforts.</p>
       </div>
       <div className='secondlook'>
         <img src="https://imgnew.outlookindia.com/uploadimage/library/free_files/jpg/300-120_2022_06_13_080305.jpg" alt="" />
         <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_5/IMAGE_1654151729.webp" alt="" />
         <br />
-        <NavLink className={"navlink"} style={{fontSize:"26px", fontWeight:"light"}} to="/fullnews">From Naya Dawn To Daily Violence, Kashmir Post-August 5, 2019</NavLink><br />
+        <NavLink className={"navlink"} style={{fontSize:"26px", fontWeight:"light"}} to={`/`}>From Naya Dawn To Daily Violence, Kashmir Post-August 5, 2019</NavLink><br />
         <p>Three years after the abrogation of Article 370, there is no elected government in Jammu and Kashmir and targeted killings have gained pace despite frequent encounters.</p>
       <br />
       <h6>NASEER GANAI/ last updated at 8:58 am</h6><br />
@@ -48,7 +49,7 @@ const Outlook = () => {
     <br />
     <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_5/IMAGE_1650862677.webp" alt="" />
       <br />
-      <NavLink className={"navlink"} style={{fontSize:"26px", fontWeight:"light"}} to="/fullnews">An Ode to Ladakh: A Pristine And Beautiful Region In Transition</NavLink><br />
+      <NavLink className={"navlink"} style={{fontSize:"26px", fontWeight:"light"}} to={`/`}>An Ode to Ladakh: A Pristine And Beautiful Region In Transition</NavLink><br />
       <p>The hope is that Ladakh remains a region that while reaping the benefits of economic development and modernisation retains its essential character.</p>
       </div>
      
@@ -74,6 +75,13 @@ const Outlook = () => {
 }
 
 function BlogPostWithImage({image,title,description,publishedAt,source}) {
+  const articles=useSelector((store)=>store.magzineData.articles)
+  const dispatch=useDispatch()
+  useEffect(()=>{
+  if(articles?.length===0){
+    dispatch(fetchData())
+  }
+  },[articles?.length,dispatch])
   return (
     <Center py={6}>
       <Box
@@ -111,7 +119,8 @@ function BlogPostWithImage({image,title,description,publishedAt,source}) {
             color={useColorModeValue('gray.700', 'white')}
             fontSize={'2xl'}
             fontFamily={'body'}>
-            {title}
+               
+            <Link className={"active"} to={`/fullnews/${title}/${source}/${description}`} >{title}</Link>
           </Heading>
           <Text color={'gray.500'}>
            {description}

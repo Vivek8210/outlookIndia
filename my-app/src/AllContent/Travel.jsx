@@ -37,16 +37,16 @@ const Travel = () => {
         </div>
       <div className='secbusiness'>
 <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_2/IMAGE_1655279045.webp" alt="" />        
-<NavLink className={"navlink"} style={{fontSize:"26px", fontWeight:"light"}} to="/fullnews">Singapore Airlines Launches Two New Flagship Lounges</NavLink><br />
+<NavLink className={"navlink"} style={{fontSize:"26px", fontWeight:"light"}} to="/">Singapore Airlines Launches Two New Flagship Lounges</NavLink><br />
         <p>The project was announced in 2019 and received a 36 million (Rs. 2,80,94,05,800) upgrade </p><br /><hr />
-        <NavLink className={"navlink"} style={{fontSize:"26px", fontWeight:"light"}} to="/fullnews">Raiganj Wildlife Sanctuary: Weekending With Birds</NavLink>
+        <NavLink className={"navlink"} style={{fontSize:"26px", fontWeight:"light"}} to="/">Raiganj Wildlife Sanctuary: Weekending With Birds</NavLink>
         <p>Forex traders said lacklustre domestic markets, elevated crude oil prices and persistent foreign capital outflows weighed on the local unit.</p>
       </div>
       <div className='thirdbusiness'>
         <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_1/IMAGE_1655218680.webp" alt="" /><br />
-        <NavLink className={"navlink"} style={{fontSize:"26px", fontWeight:"light"}} to="/fullnews">UK Witnesses World’s Biggest Four-Day Work Week Pilot</NavLink><br />
+        <NavLink className={"navlink"} style={{fontSize:"26px", fontWeight:"light"}} to="/">UK Witnesses World’s Biggest Four-Day Work Week Pilot</NavLink><br />
         <p>The researchers will oversee and observe the productivity and health of the worker, environmental impact and gender norms</p><br /><hr />
-        <NavLink className={"navlink"} style={{fontSize:"26px", fontWeight:"light"}} to="/fullnews">Thailand Aims At Removing Covid-19 Related Travel Ban And To Restore Visa-On-Arrival For International Travellers</NavLink>
+        <NavLink className={"navlink"} style={{fontSize:"26px", fontWeight:"light"}} to="/">Thailand Aims At Removing Covid-19 Related Travel Ban And To Restore Visa-On-Arrival For International Travellers</NavLink>
         <p>Goyal said that it is possible to find the solution as there are well-established and proven mechanisms available and documents are on the table which can be...</p>
       </div>
     </div>
@@ -109,7 +109,7 @@ function BlogPostWithImage({image,title,description,publishedAt,source}) {
             color={useColorModeValue('gray.700', 'white')}
             fontSize={'2xl'}
             fontFamily={'body'}>
-            {title}
+            <NavLink className={"active"} to={`/fullnews/${title}/${source}/${description}`}>{title}</NavLink>
           </Heading>
           <Text color={'gray.500'}>
            {description}

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Box, Stack,Center } from '@chakra-ui/react';
 import { Divider } from '@chakra-ui/react';
+import { NavLink } from 'react-router-dom';
 const OutlookLogo = () => {
   return (
     <Stack alignItems={'center'} >
@@ -8,7 +9,7 @@ const OutlookLogo = () => {
         
     <Box  ><img src='https://www.outlookindia.com/images/home_new_v4/logo_outlook.svg' /></Box>
     <Box display={"flex"} gap={"10px"} color={"#4f4d4d"} fontSize={"13px"}>
-        <Box><a href=''>LOGIN</a></Box>
+        <Box><NavLink to="/login">LOGIN</NavLink></Box>
         <Center height='15px' bg={"red"} marginTop={"7px"} >
   <Divider orientation='vertical' />
 </Center>
